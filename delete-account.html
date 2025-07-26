@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Excluir Minha Conta - Nome do App</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+    button { background: #ff4444; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Excluir minha conta</h1>
+  <p>Para solicitar a exclusão da sua conta e todos os dados associados, clique no botão abaixo:</p>
+  
+  <button onclick="requestAccountDeletion()">Solicitar Exclusão</button>
+  
+  <p id="confirmation" style="display: none;">Solicitação recebida! Apagaremos seus dados em até 7 dias.</p>
+  
+  <script>
+    function requestAccountDeletion() {
+      // Aqui você pode adicionar lógica para enviar um e-mail ou chamar uma API
+      document.getElementById('confirmation').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
